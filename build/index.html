@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Crowdfunding Project</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link href="./app.css" rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        
+    </head>
+    <body>
+
+        <div class="navbar">
+            <div class="navbar-btn" id="navbtn_viewProjects">View Projects</div>
+            <div class="navbar-btn" id="navbtn_addProject">Add Project</div>
+            <div class="navbar-btn" id="navbtn_contribute">Contribute</div>
+            <div class="navbar-btn" id="navbtn_viewContributors">View Contributors</div>
+        </div>
+
+        <h1>Crowdfunding</h1>
+
+        <div class="container active" id="viewProjects">
+            <h3>View Projects</h3>
+
+            <div id="projects"></div>
+        </div>
+
+        <div class="container" id="addProject">
+            <h3>Add Project</h3>
+
+            <h5>Owner</h5>
+            <input type="text" id="projOwner"/>
+
+            <h5>Project Target</h5>
+            <input type="text" id="projTarget"/>
+
+            <h5>Project Deadline</h5>
+            <input type="text" id="projDeadline"/>
+
+            <div class="vspace-0"></div>
+
+            <button id="btn_addProject">Add Project</button>
+        </div>
+
+        <div class="container" id="contribute">
+            <h3>Contribute</h3>
+
+            <h5>Choose Project</h5>
+            <div id="dropdownProjs"></div>
+
+            <h5>Contribute from</h5>
+            <input type="text" id="contributor" placeholder="i.e. 0x35526e6d6aeaa7218b9623f6c3ecc468471ecb30"/>
+
+            <h5>Amount</h5>
+            <input type="text" id="contribAmount"/>
+
+            <div class="vspace-0"></div>
+
+            <h5>Contribution date</h5>
+            <input type="text" id="contribDate"/>
+
+            <div class="vspace-0"></div>
+
+            <button id="btn_contribute">Contribute</button>
+        </div>
+
+        <div class="container" id="viewContributors">
+            <h3>View Contributors</h3>
+
+            <h5>Choose Campaign</h5>
+            <div id="dropdownProjs2"></div>
+
+
+        </div>
+
+        <!-- SCRIPTS -->
+        <script src="./app.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <!-- SCRIPTS END -->
+
+    </body>
+</html>
